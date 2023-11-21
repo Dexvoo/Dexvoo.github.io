@@ -7,8 +7,8 @@
 		<style>
 			body {
 				font-family: 'Arial', sans-serif;
-				margin: 20px;
-				padding: 20px;
+				margin: 0;
+				padding: 0;
 				background-color: #f9f9f9;
 			}
 
@@ -19,10 +19,25 @@
 				text-align: center;
 			}
 
+			.top-bar {
+				background-color: #555;
+				color: #fff;
+				padding: 8px;
+				text-align: center;
+			}
+
+			.top-bar a {
+				color: #fff;
+				text-decoration: none;
+				margin: 0 10px;
+				font-weight: bold;
+			}
+
 			h1,
 			h2,
 			h3 {
 				color: #333;
+				margin-top: 20px;
 			}
 
 			p {
@@ -74,18 +89,15 @@
 			<h1>My Bot Documentation</h1>
 		</header>
 
-		<div class="dropdown">
-			<h2>Documentation Sections</h2>
-			<div class="dropdown-content">
-				<a href="#installation" class="dropdown-item">Installation</a>
-				<a href="#commands" class="dropdown-item">Commands</a>
-				<a href="#configuration" class="dropdown-item">Configuration</a>
-				<a href="#examples" class="dropdown-item">Examples</a>
-				<a href="#troubleshooting" class="dropdown-item">Troubleshooting</a>
-				<a href="#support" class="dropdown-item">Support</a>
-				<a href="#changelog" class="dropdown-item">Changelog</a>
-				<a href="#legal" class="dropdown-item">Legal</a>
-			</div>
+		<div class="top-bar">
+			<a href="#installation">Installation</a>
+			<a href="#commands">Commands</a>
+			<a href="#configuration">Configuration</a>
+			<a href="#examples">Examples</a>
+			<a href="#troubleshooting">Troubleshooting</a>
+			<a href="#support">Support</a>
+			<a href="#changelog">Changelog</a>
+			<a href="#legal">Legal</a>
 		</div>
 
 		<section id="installation">
