@@ -30,6 +30,36 @@
 				border-radius: 3px;
 				font-family: 'Courier New', monospace;
 			}
+
+			/* Dropdown Styles */
+			.dropdown {
+				position: relative;
+				display: inline-block;
+			}
+
+			.dropdown-content {
+				display: none;
+				position: absolute;
+				background-color: #fff;
+				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+				border-radius: 4px;
+				z-index: 1;
+			}
+
+			.dropdown:hover .dropdown-content {
+				display: block;
+			}
+
+			.dropdown-item {
+				padding: 10px;
+				color: #333;
+				text-decoration: none;
+				display: block;
+			}
+
+			.dropdown-item:hover {
+				background-color: #f0f0f0;
+			}
 		</style>
 	</head>
 	<body>
@@ -40,6 +70,20 @@
 			<p>Explain what your bot does and its main features.</p>
 		</section>
 
+		<div class="dropdown">
+			<h2>Documentation Sections</h2>
+			<div class="dropdown-content">
+				<a href="#installation" class="dropdown-item">Installation</a>
+				<a href="#commands" class="dropdown-item">Commands</a>
+				<a href="#configuration" class="dropdown-item">Configuration</a>
+				<a href="#examples" class="dropdown-item">Examples</a>
+				<a href="#troubleshooting" class="dropdown-item">Troubleshooting</a>
+				<a href="#support" class="dropdown-item">Support</a>
+				<a href="#changelog" class="dropdown-item">Changelog</a>
+				<a href="#legal" class="dropdown-item">Legal</a>
+			</div>
+		</div>
+
 		<section id="installation">
 			<h2>Installation</h2>
 			<ol>
@@ -49,52 +93,6 @@
 			</ol>
 		</section>
 
-		<section id="commands">
-			<h2>Commands</h2>
-			<h3><code>!command1</code></h3>
-			<p>Description of command 1.</p>
-			<p>Usage: <code>!command1 [arguments] [options]</code></p>
-
-			<h3><code>!command2</code></h3>
-			<p>Description of command 2.</p>
-			<p>Usage: <code>!command2 [arguments] [options]</code></p>
-			<!-- Add more command sections as needed -->
-		</section>
-
-		<section id="configuration">
-			<h2>Configuration</h2>
-			<p>Explain how users can configure the bot.</p>
-		</section>
-
-		<section id="examples">
-			<h2>Examples</h2>
-			<p>Provide practical examples and use cases.</p>
-		</section>
-
-		<section id="troubleshooting">
-			<h2>Troubleshooting</h2>
-			<p>Anticipate common issues and provide solutions.</p>
-		</section>
-
-		<section id="support">
-			<h2>Support and Community</h2>
-			<p>
-				Join our Discord server for support:
-				<a href="your_discord_server_link">Discord Server</a>
-			</p>
-		</section>
-
-		<section id="changelog">
-			<h2>Changelog</h2>
-			<ul>
-				<li>Version X.X.X (Date): Description of changes.</li>
-				<!-- Add more changelog entries as needed -->
-			</ul>
-		</section>
-
-		<section id="legal">
-			<h2>Legal</h2>
-			<p>Specify the license and any legal information.</p>
-		</section>
+		<!-- Add other sections as needed -->
 	</body>
 </html>
